@@ -12,7 +12,7 @@ function EditBook() {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`http://localhost:5656/books/${id}`);
+        const response = await axios.get(`https://book-v41u.onrender.com/books/${id}`);
         setTitle(response.data.title);
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
