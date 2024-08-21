@@ -25,7 +25,7 @@ function Home() {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`https://book-v41u.onrender.com/books/${id}`);
-      fetchBooks(); // Refresh the book list after deletion
+      fetchBooks(); 
     } catch (error) {
       console.error("Error deleting book:", error);
     }
