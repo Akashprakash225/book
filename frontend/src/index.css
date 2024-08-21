@@ -1,0 +1,5 @@
+.navbar{
+    flex-direction: column-reverse;
+    font-size: larger;
+    font-weight: 800;
+  }
