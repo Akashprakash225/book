@@ -26,7 +26,7 @@ function EditBook() {
 
   const handleUpdateBook = async () => {
     try {
-      await axios.put(`http://localhost:5656/books/${id}`, {
+      await axios.put(`https://book-v41u.onrender.com/books/${id}`, {
         title,
         author,
         publishYear,
