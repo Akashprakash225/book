@@ -9,7 +9,7 @@ function BookDetails() {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5656/books/${id}`);
+        const response = await axios.get(`https://book-v41u.onrender.com/books/${id}`);
         setBook(response.data);
       } catch (error) {
         console.error("Error fetching book details:", error);
