@@ -6,6 +6,12 @@ import booksRoute from "./routes/booksRoute.js";
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(cors({
+  origin: 'https://your-vercel-domain.vercel.app', // Replace with your Vercel domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+}));
+
 
 app.use("/books", booksRoute);
 
